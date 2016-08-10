@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:weightSum="4">
+    <fragment android:id="@+id/bathingSiteFragment"
+        android:name="se.miun.daje1400.bathingsites.BathingSitesFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_bathing_sites"/>
+    <fragment
+        android:id="@+id/newBathingSitesFragment"
+        android:name="se.miun.daje1400.bathingsites.NewBathingSiteFragment"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_new_bathing_site" />
+
+</LinearLayout>

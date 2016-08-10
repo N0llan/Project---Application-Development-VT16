@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditTextPreference
+        android:defaultValue="@string/default_weather_url"
+        android:title="@string/get_weather_url"
+        android:key="@string/get_weather_url"
+        android:summary="@string/default_weather_url"/>
+    <EditTextPreference
+        android:defaultValue="@string/default_bathingsites_url"
+        android:title="@string/get_bathingsites_url"
+        android:key="@string/get_bathingsites_url"
+        android:summary="@string/default_bathingsites_url"/>
+    <EditTextPreference
+        android:inputType="numberDecimal"
+        android:defaultValue="@string/radius_default_value"
+        android:title="@string/radius_distance"
+        android:key="@string/radius_distance"
+        android:summary="@string/radius_default_value"/>
+
+</PreferenceScreen>
